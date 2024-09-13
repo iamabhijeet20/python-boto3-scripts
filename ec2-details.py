@@ -18,4 +18,6 @@ for instances in list:
             Az = each_instance['Placement']
             AvailabilityZone = Az['AvailabilityZone']               ### AvailabilityZone = Az
 
-            print(tag_name,instance_id,instance_type,AvailabilityZone)           
+            PublicIp = each_instance['PublicIpAddress']             ### PublicIp = PublicIpAddress
+
+            print(tag_name,instance_id,instance_type,AvailabilityZone,PublicIp)           
