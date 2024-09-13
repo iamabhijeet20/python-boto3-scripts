@@ -20,4 +20,6 @@ for instances in list:
 
             PublicIp = each_instance['PublicIpAddress']             ### PublicIp = PublicIpAddress
 
-            print(tag_name,instance_id,instance_type,AvailabilityZone,PublicIp)           
+            KeyName = each_instance['KeyName']                      ### KeyName = KeyName
+
+            print(tag_name,instance_id,instance_type,AvailabilityZone,PublicIp,KeyName)           
