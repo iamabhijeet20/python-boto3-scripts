@@ -22,4 +22,8 @@ for instances in list:
 
             KeyName = each_instance['KeyName']                      ### KeyName = KeyName
 
-            print(tag_name,instance_id,instance_type,AvailabilityZone,PublicIp,KeyName)           
+            for network in each_instance['NetworkInterfaces']:
+                for groups in network['Groups']:
+                    GroupId = (groups['GroupId'])                   ### GroupId = GroupId
+
+            print(tag_name,instance_id,instance_type,AvailabilityZone,PublicIp,KeyName,GroupId)           
