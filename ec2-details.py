@@ -15,5 +15,7 @@ for instances in list:
 
             instance_type = each_instance['InstanceType']           ### instance_type = InstanceType
 
-            
-            print(tag_name,instance_id)           
+            Az = each_instance['Placement']
+            AvailabilityZone = Az['AvailabilityZone']               ### AvailabilityZone = Az
+
+            print(tag_name,instance_id,instance_type,AvailabilityZone)           
