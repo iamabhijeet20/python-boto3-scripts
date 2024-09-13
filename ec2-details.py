@@ -27,4 +27,6 @@ for instances in list:
                     GroupId = (groups['GroupId'])                   ### GroupId = GroupId
                     GroupName = (groups['GroupName'])               ### GroupName = GroupName
 
-            print(tag_name,instance_id,instance_type,AvailabilityZone,PublicIp,KeyName,GroupId,GroupName)           
+            VpcId = each_instance['VpcId']                          ### VpcId = VpcId
+
+            print(tag_name,instance_id,instance_type,AvailabilityZone,PublicIp,KeyName,GroupId,GroupName,VpcId)           
