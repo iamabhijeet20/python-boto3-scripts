@@ -9,6 +9,8 @@ list = ec2_client.describe_instances()['Reservations']
 for instances in list:
     for each_instance in instances['Instances']:
         for name in each_instance['Tags']:
-            tag_name = name['Value']
-            
-            print(tag_name)           
+            tag_name = name['Value']                                ### tag_name = name
+
+            instance_id = each_instance['InstanceId']               ### instance_id = id
+
+            print(tag_name,instance_id)           
