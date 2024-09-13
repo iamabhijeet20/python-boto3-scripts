@@ -13,4 +13,7 @@ for instances in list:
 
             instance_id = each_instance['InstanceId']               ### instance_id = id
 
+            instance_type = each_instance['InstanceType']           ### instance_type = InstanceType
+
+            
             print(tag_name,instance_id)           
