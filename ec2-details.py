@@ -25,5 +25,6 @@ for instances in list:
             for network in each_instance['NetworkInterfaces']:
                 for groups in network['Groups']:
                     GroupId = (groups['GroupId'])                   ### GroupId = GroupId
+                    GroupName = (groups['GroupName'])               ### GroupName = GroupName
 
-            print(tag_name,instance_id,instance_type,AvailabilityZone,PublicIp,KeyName,GroupId)           
+            print(tag_name,instance_id,instance_type,AvailabilityZone,PublicIp,KeyName,GroupId,GroupName)           
